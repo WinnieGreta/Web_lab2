@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<script type="text/javascript" src="lab2.js"></script>
+</head>
+<body onload="cookieStorageCheck()">
+<header>
+  <div class="flexbox-container-4">
+    <div class="flexbox-item flexbox-item-6">
+      <h1>Hades</h1>
+    </div>
+
+    <p id="paragraph1">
+      Hades is a roguelike game from Supergiant Games, creators of Bastion,
+      Transistor, and Pyre. You play as Zagreus, immortal son of Hades, on his
+      quest to escape from the underworld, fighting through many angry lost
+      souls along the way.
+    </p>
+  </div>
+</header>
+  <div class="flexbox-container-1">
+    <div class="flexbox-item flexbox-item-1">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="Page1.html">Chthonic Gods</a></li>
+        <li><a href="Page2.html">Olympic Gods</a>
+          <ul>
+              <li><a href="Page3.html">Hermes</a></li>
+              <li><a href="Page4.html">Athena</a></li>
+            </ul>
+          </li>
+          <li><a href="Index.html">Return</a></li>
+        </ul>
+    </div>
+    <div class="flexbox-item flexbox-item-2">
+      Hades is a rogue-like dungeon crawler in which you defy the god of the
+      dead as you hack and slash your way out of the Underworld of Greek myth.
+      We think it combines the best aspects of our previous games, including
+      the fast-paced action of Bastion, the rich atmosphere and depth of
+      Transistor, and the character-driven storytelling of Pyre.
+    </div>
+    <div class="flexbox-container-2" style="flex-grow: 1">
+      <div class="flexbox-item flexbox-item-3">
+        <button onClick="switchParagraphs()">Switch</button>
+      </div>
+      <div class="flexbox-container-3">
+        <div class="flexbox-item flexbox-item-4">
+          <p>
+           It’s never the same experience twice: Each time you play, you'll combine
+           the divine might of various Olympian gods with your own in new ways,
+           brave a wide variety of different challenges, and unravel more of the
+           story featuring our award-winning art, audio, and narrative. You may
+           play for not just dozens of hours, but hundreds of hours, while still
+           discovering new character builds and story events.
+         </p>
+
+           <label for="radius">
+             Find circle area by radius: <input type="text" id="radius" name="radius">
+           </lable>
+           <button onClick="circleArea()">Find</button>
+        <p id="paragraph3">
+         </p>
+
+           <label for="inputNum">
+             Get minimum digit of the number: <input type="text" id="inputNum" name="inputNum">
+           </label>
+           <button onClick="minDigit()">Find</button>
+        </div>
+        <div class="flexbox-item flexbox-item-5">
+         <p id="paragraph2">  <img src="MAP.jpg"
+               alt="map"
+               width="200" height="400" onmouseout="generateTable()">  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+  <div class="flexbox-container-5">
+    <p>
+    <label for="textColor">Chenge color of text after selecting:</label>
+    <input type="color" id="textColor" name="textColor" value="#000000">
+  </p>
+  <p>
+    <textarea id=coloredText onselect="changeColor()">
+    Death is a mere inconvenience for Zagreus, returning to his room in Hades'
+    palace each time to reflect in the Mirror of Night and try again. Receive
+    Boons from the other gods of Olympus and find treasures to aid in each
+    escape attempt.
+    </textarea>
+  </p>
+    <div class="flexbox-item flexbox-item-7">
+      <h1>There is no escape</h1>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
